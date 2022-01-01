@@ -10,7 +10,6 @@
       fill="#00DC82"
     />
   </svg>
-  
 </template>
 
 <style>
