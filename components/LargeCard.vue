@@ -1,6 +1,7 @@
 <template>
   <div class="card flex flex-col gap-1 w-1/3 h-96 overflow-hidden p-0 cursor-pointer">
-      <img :src="require(`@/assets/images/${card.image || 'fe1.jpg'}`)" alt="fe" class="rounded-lg image h-3/5">
+      <!-- <nuxt-img src="/nuxt-icon.png" /> -->
+      <nuxt-img :src="`/images/${card.image || 'fe1.jpg'}`" alt="fe" class="rounded-lg image h-3/5"/>
       <h3 class="header">
           {{card.title}}
       </h3>
