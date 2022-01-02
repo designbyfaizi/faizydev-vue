@@ -53,7 +53,4 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-  image: {
-    domains: ['https://fire-extinguisher.vercel.app']
-  },
 }
