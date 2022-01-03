@@ -11,7 +11,7 @@
       <button class="button btn">Start Looking!</button>
     </div>
     <div class="img-container">
-        <img src="@/assets/svg/fire-extinguisher.svg" alt="Fire Extinguisher" class="image">
+        <nuxt-img src="/svg/fire-extinguisher.svg" alt="Fire Extinguisher" class="image"/>
     </div>
   </div>
 </template>

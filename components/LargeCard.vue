@@ -1,5 +1,5 @@
 <template>
-  <div class="card flex flex-col gap-1 w-1/3 h-96 overflow-hidden p-0 cursor-pointer">
+  <NuxtLink :to="`/products/${card.id}`" class="card flex flex-col gap-1 w-1/3 h-96 overflow-hidden p-0 cursor-pointer">
       <!-- <nuxt-img src="/nuxt-icon.png" /> -->
       <nuxt-img :src="`/images/${card.image || 'fe1.jpg'}`" alt="fe" class="rounded-lg image h-3/5"/>
       <h3 class="header">
@@ -8,7 +8,7 @@
       <p class="snippet">
           {{card.snippet}}
       </p>
-  </div>
+  </NuxtLink>
 </template>
 
 <script>
@@ -18,6 +18,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.card:hover{
+  text-decoration: underline;
+}
 
 .header {
   font-size: 1.15rem;

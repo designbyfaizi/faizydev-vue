@@ -3,11 +3,12 @@
     <div class="px-6 py-6 mx-auto md:flex">
       <div class="flex items-center justify-between">
         <div>
-          <a
+          <NuxtLink
             class="text-2xl font-bold text-white transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300"
-            href="#"
-            >FE</a
+            to="/"
           >
+            FE
+          </NuxtLink>
         </div>
 
         <!-- Mobile menu button -->
@@ -30,16 +31,18 @@
       <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
       <div class="ml-auto md:flex md:items-center md:justify-between">
         <div class="flex flex-col px-2 py-3 -mx-4 md:flex-row md:mx-0 md:py-0">
-          <a
-            href="#"
+          <NuxtLink
+            to="/products"
             class="px-2 py-1 text-sm font-medium text-white transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2"
-            >Products</a
           >
-          <a
-            href="#"
+            Products
+          </NuxtLink>
+          <NuxtLink
+            to="/my-items"
             class="px-2 py-1 text-sm font-medium text-white transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2"
-            >My Items</a
           >
+            My Items
+          </NuxtLink>
         </div>
       </div>
     </div>
