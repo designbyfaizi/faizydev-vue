@@ -10,7 +10,7 @@
         minima placeat, id accusantium deleniti quibusdam alias? Corrupti
         laboriosam veritatis consequuntur fuga excepturi?
       </p>
-      <button class="button">Start Looking!</button>
+      <Button placeholder="Start Booking!"/>
     </div>
     <div class="img-container">
       <nuxt-img
@@ -36,18 +36,6 @@ export default {}
     .snippet {
       /* color: grey; */
     }
-      .button {
-        padding: 1rem 4rem;
-        border-radius: 100rem;
-        background-color: rgb(231, 81, 43);
-        color: white;
-        width: 20rem;
-        font-weight: 700;
-        transition: 0.5s;
-      }
-      .button:hover {
-        width: 21.5rem;
-      }
   }
 }
 .image {
