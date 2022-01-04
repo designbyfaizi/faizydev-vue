@@ -1,15 +1,12 @@
 <template>
-    <div>
-        Tis My Items page
-    </div>
+  <div>
+    <Nav />
+    <div class="flex h-[75vh] justify-center items-center">My Items page o(^^o)</div>
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {}
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
