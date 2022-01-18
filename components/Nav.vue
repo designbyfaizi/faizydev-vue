@@ -6,12 +6,12 @@
           to="/"
           class="logo my-auto h-full flex w-[50px] ease-linear duration-200"
         >
-          <nuxt-img
+          <img
             class="max-w-[60px] my-auto"
             src="/svg/designbyfaizi.svg"
             alt="Design by Faizi"
-          >
-          </nuxt-img>
+          />
+          
         </nuxt-link>
       </div>
       <ol class="nav-items my-auto flex">
