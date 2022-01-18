@@ -8,7 +8,7 @@
         >
           <nuxt-img
             class="max-w-[60px] my-auto"
-            src="/images/designbyfaizi.png"
+            src="/svg/designbyfaizi.svg"
             alt="Design by Faizi"
           >
           </nuxt-img>
