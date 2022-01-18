@@ -3,31 +3,32 @@
     <Nav />
     <div class="container mx-auto">
       <Hero />
-      <LargeCardDisplay
-        v-for="cardInfo in largeCardInfo"
-        :key="cardInfo.id"
-        :cardsSection="cardInfo"
-      />
-      <SmallCardDisplay
-        v-for="cardInfo in smallCardInfo"
-        :key="cardInfo.id"
-        :cardsSection="cardInfo"
-      />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import { smallCardSections, largeCardSections } from '@/assets/data.js'
+import { smallCardSections, largeCardSections } from '@/assets/data.js';
+import '@/styles/global.scss';
+
 
 export default Vue.extend({
   name: 'IndexPage',
   data() {
     return {
       largeCardInfo: largeCardSections,
-      smallCardInfo: smallCardSections,
+      smallCardInfo: smallCardSections
     }
   },
 })
 </script>
+
+
+<style lang="scss">
+@import '@/styles/fonts.scss';
+
+body{
+  font-family: 'SF Mono';
+}
+</style>

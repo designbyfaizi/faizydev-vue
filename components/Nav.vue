@@ -1,56 +1,43 @@
 <template>
-  <nav class="bg-gray-800 shadow">
-    <div class="px-6 py-6 mx-auto md:flex">
-      <div class="flex items-center justify-between">
-        <div>
-          <NuxtLink
-            class="text-2xl font-bold text-white transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300"
-            to="/"
+  <nav class="">
+    <div class="h-28 flex justify-between align-middle px-12 mx-auto">
+      <div>
+        <nuxt-link
+          to="/"
+          class="logo my-auto h-full flex w-[50px] ease-linear duration-200"
+        >
+          <nuxt-img
+            class="max-w-[60px] my-auto"
+            src="/svg/designbyfaizi.svg"
+            alt="Design by Faizi"
           >
-            FE
-          </NuxtLink>
-        </div>
-
-        <!-- Mobile menu button -->
-        <div class="flex md:hidden">
-          <button
-            type="button"
-            class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
-            aria-label="toggle menu"
-          >
-            <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
-              <path
-                fill-rule="evenodd"
-                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-              ></path>
-            </svg>
-          </button>
-        </div>
+          </nuxt-img>
+        </nuxt-link>
       </div>
-
-      <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-      <div class="ml-auto md:flex md:items-center md:justify-between">
-        <div class="flex flex-col px-2 py-3 -mx-4 md:flex-row md:mx-0 md:py-0">
-          <NuxtLink
-            to="/products"
-            class="px-2 py-1 text-sm font-medium text-white transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2"
-          >
-            Products
-          </NuxtLink>
-          <NuxtLink
-            to="/my-items"
-            class="px-2 py-1 text-sm font-medium text-white transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2"
-          >
-            My Items
-          </NuxtLink>
-        </div>
-      </div>
+      <ol class="nav-items my-auto flex">
+        <FaiziNavLink
+          v-for="navLink in navLinks"
+          :key="navLink.id"
+          :to="navLink.to"
+          :placeholder="navLink.placeholder"
+          :number="navLink.id"
+        />
+        <FaiziButton class="ml-3" placeholder="Resume" />
+      </ol>
     </div>
   </nav>
 </template>
 
 <script>
-export default {}
+import { navLinks } from '@/assets/navLinks.js'
+
+export default {
+  data() {
+    return {
+      navLinks: navLinks,
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>

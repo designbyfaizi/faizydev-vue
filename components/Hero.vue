@@ -1,23 +1,22 @@
 <template>
-  <div
-    class="hero container mx-auto relative flex flex-row gap-2 py-20 justify-between items-start"
-  >
-    <div class="text-container w-3/6 my-auto flex flex-col gap-3">
-      <h1 class="header font-black text-7xl">Find your Fire Extinguisher</h1>
-      <p class="snippet text-gray-500 text-xl">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        quaerat sapiente corporis quae necessitatibus, doloribus cum, odio
-        minima placeat, id accusantium deleniti quibusdam alias? Corrupti
-        laboriosam veritatis consequuntur fuga excepturi?
-      </p>
-      <Button placeholder="Start Booking!"/>
-    </div>
-    <div class="img-container">
-      <nuxt-img
-        src="/svg/fire-extinguisher.svg"
-        alt="Fire Extinguisher"
-        class="image"
-      />
+  <div class="hero flex justify-center items-center w-9/12 mx-auto">
+    <div class="">
+      <div class="hi my-2">
+        <h4>Hi, my name is</h4>
+      </div>
+      <div class="heading text-colorPrimary font-medium text-7xl my-2">
+        <h1>Faizan Ullah.</h1>
+      </div>
+      <div class="subheading text-7xl my-2">
+        <h1>I design stuff for the web.</h1>
+      </div>
+      <div class="description my-6 font-light max-w-lg">
+        <h3>
+          I'm a full stack developer specializing in designing and building web
+          services in REACT and VUE JS.
+        </h3>
+      </div>
+      <FaiziButton twStyles="button" placeholder="Get in Touch"/>
     </div>
   </div>
 </template>
@@ -27,31 +26,17 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import '@/styles/global.scss';
 .hero {
-  min-height: 50vh;
-  .text-container {
-    .header {
-      /* font-size: 5rem; */
-    }
-    .snippet {
-      /* color: grey; */
-    }
+  min-height: calc(80vh - $nav-height);
+  .hi {
+    font-weight: 300;
   }
-}
-.image {
-  width: 27.5rem;
-  margin-top: 2rem;
-}
-.overlay {
-  background: rgba(0, 0, 0, 0);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
-@media (max-width: 500px) {
-  .Hero {
-    height: 40vh;
+  .heading, .subheading, .description{
+    font-family: 'Poppins';
+  }
+  .button{
+    padding: 1rem 1.5rem;
   }
 }
 </style>

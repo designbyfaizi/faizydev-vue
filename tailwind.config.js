@@ -15,7 +15,13 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        colorPrimary: '#fd4654',
+        colorAccent: '#2C1E28',
+        colorDark: '#0E1822'
+      }
+    },
   },
   variants: {
     extend: {},

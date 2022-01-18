@@ -1,0 +1,12 @@
+
+$color-primary: #fd4654;
+$color-accent: #2C1E28;
+$color-dark: #0E1822;
+$nav-height: 7rem;
+
+@import './scrollbar.scss';
+
+body{
+    background: $color-dark;
+    color: white;
+}
