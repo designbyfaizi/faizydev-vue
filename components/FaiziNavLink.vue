@@ -1,6 +1,6 @@
 <template>
-    <li class="nav-link px-3 py-1 ml-4 my-auto hover:text-colorPrimary ease-linear duration-200">
-      <NuxtLink :to="to"><span class="text-colorPrimary">0{{number}}. </span>{{placeholder}}</NuxtLink>
+    <li class="nav-link ml-4 my-auto hover:text-colorPrimary ease-linear duration-200">
+      <NuxtLink class="px-3 py-1 " :to="to"><span class="text-colorPrimary">0{{number}}. </span>{{placeholder}}</NuxtLink>
     </li>
 </template>
 

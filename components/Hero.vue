@@ -2,12 +2,12 @@
   <div class="hero flex justify-center items-center w-9/12 mx-auto">
     <div class="">
       <div class="hi my-2">
-        <h4>Hi, my name is</h4>
+        <h4 class="ml-[3px]">Hi, my name is</h4>
       </div>
-      <div class="heading text-colorPrimary font-medium text-7xl my-2">
+      <div class="heading text-colorPrimary font-medium text-7xl my-2 leading-none">
         <h1>Faizan Ullah.</h1>
       </div>
-      <div class="subheading text-7xl my-2">
+      <div class="subheading text-7xl my-2 leading-none">
         <h1>I design stuff for the web.</h1>
       </div>
       <div class="description my-6 font-light max-w-lg">

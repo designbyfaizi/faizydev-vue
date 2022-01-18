@@ -1,7 +1,9 @@
 <template>
   <div>
     <Nav />
-    <div class="flex h-[75vh] justify-center items-center">My Items page o(^^o)</div>
+    <div class="container mx-auto">
+      <h1>Contact</h1>
+    </div>
   </div>
 </template>
 

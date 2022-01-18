@@ -22,7 +22,7 @@
           :placeholder="navLink.placeholder"
           :number="navLink.id"
         />
-        <FaiziButton class="ml-3" placeholder="Resume" />
+        <FaiziButton class="ml-6" placeholder="Resume" />
       </ol>
     </div>
   </nav>
