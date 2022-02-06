@@ -1,10 +1,10 @@
 <template>
-  <div class="hero flex justify-center items-center w-9/12 mx-auto">
+  <div class="hero container flex items-center max-w-5xl mx-auto">
     <div class="">
       <div class="hi my-2">
-        <h4 class="ml-[3px]">Hi, my name is</h4>
+        <h4 class="ml-1">Hi, my name is</h4>
       </div>
-      <div class="heading text-colorPrimary font-medium text-7xl my-2 leading-none">
+      <div class="heading font-medium text-7xl my-2 leading-none">
         <h1>Faizan Ullah.</h1>
       </div>
       <div class="subheading text-7xl my-2 leading-none">
@@ -30,10 +30,14 @@ export default {}
 .hero {
   min-height: calc(80vh - $nav-height);
   .hi {
-    font-weight: 300;
+    font-weight: 100;
+    color: $color-primary;
   }
   .heading, .subheading, .description{
     font-family: 'Poppins';
+  }
+  .heading{
+    color: $color-primary;
   }
   .button{
     padding: 1rem 1.5rem;

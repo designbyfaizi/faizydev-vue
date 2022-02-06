@@ -12,7 +12,8 @@
 
 <style lang="scss" scoped>
 .nav-link{
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 100;
 }
 
 </style>

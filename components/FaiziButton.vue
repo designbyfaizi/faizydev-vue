@@ -14,6 +14,7 @@ export default {
 .button {
   padding: 0.6rem 0.9rem;
   border: 1px solid $color-primary;
+  font-weight: 100;
   font-size: 14px;
   color: $color-primary;
   transition: all 0.3s;

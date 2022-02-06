@@ -1,5 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'server',
+  ssr: true,
   head: {
     // title: 'faizydev-vue',
     title: 'Design by Faizi',
