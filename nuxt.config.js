@@ -42,6 +42,10 @@ export default {
     '@nuxt/image',
   ],
 
+  image:{
+    provider: 'static'
+  },
+
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
