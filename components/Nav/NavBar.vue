@@ -1,12 +1,12 @@
 <template>
   <nav class="">
-    <div class="h-28 flex justify-between align-middle px-12 mx-auto">
+    <div class="nav flex justify-between align-middle px-12 mx-auto">
       <div>
         <nuxt-link
           to="/"
           class="logo my-auto h-full flex w-[50px] ease-linear duration-200"
         >
-          <img
+          <nuxt-img
             class="max-w-[60px] my-auto"
             src="/svg/designbyfaizi.svg"
             alt="Design by Faizi"
@@ -15,7 +15,7 @@
         </nuxt-link>
       </div>
       <ol class="nav-items my-auto flex">
-        <FaiziNavLink
+        <nav-faizi-link
           v-for="navLink in navLinks"
           :key="navLink.id"
           :to="navLink.to"
@@ -40,4 +40,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import '@/styles/global.scss';
+.nav{
+  height: $nav-height;
+}
+</style>

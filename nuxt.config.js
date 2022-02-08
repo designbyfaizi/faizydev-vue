@@ -14,11 +14,6 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    // "~styles/global.scss",
-  ],
-
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
@@ -33,6 +28,10 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
   ],
+  // Global CSS: https://go.nuxtjs.dev/config-css
+  css: [
+    "~/styles/global.scss",
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -42,6 +41,7 @@ export default {
     '@nuxtjs/pwa',
     '@nuxt/image',
   ],
+
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
